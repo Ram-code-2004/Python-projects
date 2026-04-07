@@ -4,7 +4,8 @@ sport_news =requests.get("https://newsapi.org/v2/top-headlines?category=sport&ap
 business_news =requests.get("https://newsapi.org/v2/top-headlines?category=business&apiKey=a42a556fef4a499ab8beaaf36cb071ed")
 entertainment_news =requests.get("https://newsapi.org/v2/top-headlines?category=entertainment&apiKey=a42a556fef4a499ab8beaaf36cb071ed")
 technology_news =requests.get("https://newsapi.org/v2/top-headlines?category=technology&apiKey=a42a556fef4a499ab8beaaf36cb071ed")
-def main():
+while True:
+ def main():
     choice = input("Enter the category of news you want to read (sport, business, entertainment, technology): ").lower()
     if choice == "sport":
         print("Sport News:")
@@ -40,4 +41,4 @@ def main():
 
     else:
         print("Invalid category. Please choose from sport, business, entertainment, or technology.")
-main()
+ main()
