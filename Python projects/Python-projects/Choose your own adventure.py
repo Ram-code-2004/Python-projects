@@ -29,7 +29,5 @@ elif answer == "right":
         print("You go back and you lose")
     else :
         print("Not a valid option. You lose. ")
+print("Thank you for playing the game")
 
-
-else:
-   print("Not a valid option. You lose. ")
