@@ -94,16 +94,4 @@ def add():
         f.write(name + "|" + fer.encrypt(pwd.encode()).decode() + "\n")
 
 
-while True:
-    mode = input(
-        "Add or view passwords (view/add), press q to quit: ").lower()
-
-    if mode == "q":
-        break
-    elif mode == "view":
-        view()
-    elif mode == "add":
-        add()
-    else:
-        print("Invalid mode")
    
